@@ -1,0 +1,4 @@
+```{r weather}
+library(dplyr)
+byDay <- weather %>% group_by(datetime) %>% summarise( mean = mean(datetime))
+```
